@@ -3,7 +3,7 @@ import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import App from "./App";
 
-test("Hello World test heading", () => {
+test("Check Page Heading, Hello World", () => {
     render(<App />);
-    expect(screen.getByRole("heading")).toHaveTextContent(/hello world/i);
+    expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent(/hello world/i);
 });
