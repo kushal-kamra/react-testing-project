@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 
 const App = () => {
+    const [heading, setHeading] = useState("Hello World");
+
+    const handleClick = () => {
+        setHeading("Hello Project");
+    }
+
     return (
-        <h1>
-            Hello World
-        </h1>
+        <div>
+            <h1>
+                {heading}
+            </h1>
+            <button type="button" onClick={handleClick}>
+                Update Heading
+            </button>
+        </div>
     )
 }
 
