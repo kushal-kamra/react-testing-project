@@ -17,3 +17,7 @@ describe("App component", () => {
         expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent(/hello project/i);
     });
 });
+
+describe("Index.js", () => {
+    
+});
